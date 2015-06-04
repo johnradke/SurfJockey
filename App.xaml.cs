@@ -1,4 +1,5 @@
-﻿using SurfJockey.Properties;
+﻿using Microsoft.Win32;
+using SurfJockey.Properties;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -18,6 +19,8 @@ namespace SurfJockey
             var path = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
             File.WriteAllText(Path.Combine(path, "test.txt"), "blah");
+
+            var thing = Registry.LocalMachine.OpenSubKey("SOFTWARE");
 
             var mainWindow = new MainWindow();
             mainWindow.Show();
