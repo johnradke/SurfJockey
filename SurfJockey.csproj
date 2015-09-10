@@ -63,6 +63,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="External\HChangeNotifyEventID.cs" />
+    <Compile Include="External\HChangeNotifyFlags.cs" />
+    <Compile Include="External\Shell32.cs" />
     <Compile Include="RegistryManagement\RegistryManager.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

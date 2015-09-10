@@ -1,10 +1,12 @@
 ﻿using Microsoft.Win32;
+using SurfJockey.External;
 using SurfJockey.RegistryManagement;
 using System;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Security.Principal;
 using System.Windows;
 
@@ -17,6 +19,8 @@ namespace SurfJockey
 
         private void Application_Startup(object sender, StartupEventArgs e)
         {
+            Shell32.SHChangeNotify(HChangeNotifyEventID.SHCNE_ASSOCCHANGED, HChangeNotifyFlags.SHCNF_IDLIST, IntPtr.Zero, IntPtr.Zero);
+
             if (IsAdministrator() && e.Args.Contains(_makeAppDefaultBrowserArg))
             {
                 MakeDefaultBrowser();
