@@ -38,9 +38,9 @@ namespace SurfJockey.RegistryManagement
 
         private void CreateProtocolAssociations()
         {
-            // create HKLM/SOFTWARE/Clients/StartMenuInternet/Unfurl
-            // create HKLM/SOFTWARE/Clients/StartMenuInternet/re-furl/Capabilities/
-            // create HKLM/SOFTWARE/Clients/StartMenuInternet/RefURL/Capabilities/URLAssociations (ftp,http,https)
+            // create HKLM/SOFTWARE/Clients/StartMenuInternet/urlboss
+            // create HKLM/SOFTWARE/Clients/StartMenuInternet/urlboss/Capabilities/
+            // create HKLM/SOFTWARE/Clients/StartMenuInternet/urlboss/Capabilities/URLAssociations (ftp,http,https)
             throw new NotImplementedException();
         }
 

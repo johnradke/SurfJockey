@@ -22,5 +22,14 @@ namespace SurfJockey.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("URLBoss")]
+        public string ProgId {
+            get {
+                return ((string)(this["ProgId"]));
+            }
+        }
     }
 }
