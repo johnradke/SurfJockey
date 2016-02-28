@@ -25,7 +25,7 @@ namespace SurfJockey
 
         private void Tile_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start("chrome");
+            
         }
     }
 }

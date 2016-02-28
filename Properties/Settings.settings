@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="ProgId" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">URLBoss</Value>
+      <Value Profile="(Default)">refURL</Value>
     </Setting>
   </Settings>
 </SettingsFile>

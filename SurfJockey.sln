@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfJockey", "SurfJockey.csproj", "{D0B2BB44-D5F3-48B7-9B9B-6335BC6124A6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SurfJockey.Test", "SurfJockeyTest\SurfJockey.Test.csproj", "{52718ADF-F20A-4A24-967A-BE7C0C769F3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D0B2BB44-D5F3-48B7-9B9B-6335BC6124A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0B2BB44-D5F3-48B7-9B9B-6335BC6124A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0B2BB44-D5F3-48B7-9B9B-6335BC6124A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52718ADF-F20A-4A24-967A-BE7C0C769F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52718ADF-F20A-4A24-967A-BE7C0C769F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52718ADF-F20A-4A24-967A-BE7C0C769F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52718ADF-F20A-4A24-967A-BE7C0C769F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

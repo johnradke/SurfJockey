@@ -1,13 +1,21 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using SurfJockey.Properties;
+using SurfJockey.RegistryManagement;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SurfJockey.RegistryManagement
+namespace SurfJockey.Install
 {
-    public class RegistryManager
+    public class InstallManager
     {
+        private static readonly List<IRegistryStep> Steps = new List<IRegistryStep>
+        {
+            new CreateProgIdStep()
+        };
+
         public void MakeMeDefault(string applicationPath)
         {
             CreateProgId();
@@ -43,14 +51,5 @@ namespace SurfJockey.RegistryManagement
             // create HKLM/SOFTWARE/Clients/StartMenuInternet/urlboss/Capabilities/URLAssociations (ftp,http,https)
             throw new NotImplementedException();
         }
-
-        private void CreateProgId()
-        {
-            // HKEY_LOCAL_MACHINE/SOFTWARE/Classes/refURL (or whatever)
-
-            throw new NotImplementedException();
-        }
-
-        //public void GetAllApplications
     }
 }

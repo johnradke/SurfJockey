@@ -25,7 +25,7 @@ namespace SurfJockey.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("URLBoss")]
+        [global::System.Configuration.DefaultSettingValueAttribute("refURL")]
         public string ProgId {
             get {
                 return ((string)(this["ProgId"]));
